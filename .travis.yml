@@ -1,0 +1,10 @@
+language: generic
+
+install:
+  - cd $TRAVIS_BUILD_DIR/camus/static && npm install && cd $TRAVIS_BUILD_DIR
+
+services:
+  - docker
+
+script:
+  - make build && make test

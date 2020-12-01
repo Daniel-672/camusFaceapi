@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html{% block html_attribs %}{% endblock html_attribs %}>
+{%- block html %}
+  <head>
+    {%- block head %}
+    <title>
+        {% block title %}
+            {% if title %}{{ title }}{% else %}Camus Video Chat{% endif %}
+        {% endblock title %}
+    </title>
+
+<script src="{{ url_for('static', filename='dist/jquery.js') }}"></script>
+
+<script src="{{ url_for('static', filename='dist/face-api.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/commons.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/faceDetectionControls.js') }}"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!--  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+
+<script src="{{ url_for('static', filename='dist/main2.js') }}"></script>
+
+
+
+
+
+
+    {%- block metas %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Peer-to-peer group video chat application using WebRTC. Audio and video streaming, desktop sharing, and text chat.">
+    {% block robots %}<meta name="robots" content="index, follow">{% endblock robots %}
+    {%- endblock metas %}
+
+    {%- block styles %}
+        {{ bootstrap.load_css() }}
+        <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/icons.css')}}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+
+    {%- endblock styles %}
+    {%- endblock head %}
+  </head>
+  <body{% block body_attribs %}{% endblock body_attribs %}>
+    {% block body -%}
+    {% block navbar %}
+    {%- endblock navbar %}
+    {% block content -%}
+    {%- endblock content %}
+
+    {% block scripts %}
+    {%- endblock scripts %}
+    {%- endblock body %}
+  </body>
+{%- endblock html %}
+</html>

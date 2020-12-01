@@ -1,0 +1,14 @@
+{% extends "react-base.html" %}
+
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock robots %}
+
+{% block content %}
+<div id="react-root" class="react-root">
+</div>
+
+<button id="btn-capture">트랙</button>
+
+<script src="{{ url_for('static', filename='dist/main.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/chat.js') }}"></script>
+
+{% endblock %}

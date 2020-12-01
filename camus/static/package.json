@@ -1,0 +1,54 @@
+{
+  "name": "camus-chat",
+  "version": "0.2.2",
+  "description": "Peer-to-peer video chat using WebRTC",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --mode production --config webpack.config.js",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrgnr/camus.git"
+  },
+  "keywords": [
+    "video",
+    "chat",
+    "webrtc"
+  ],
+  "author": "Morgan Robertson",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mrgnr/camus/issues"
+  },
+  "homepage": "https://github.com/mrgnr/camus#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.10.4",
+    "cypress": "^4.12.1",
+    "eslint": "^7.11.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-react": "^7.21.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "babel-loader": "^8.1.0",
+    "face-api.js": "^0.22.2",
+    "fscreen": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "webrtc-adapter": "^7.7.0"
+  }
+}
