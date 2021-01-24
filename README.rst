@@ -1,4 +1,4 @@
-Camus채팅툴에 faceapi를 이식함
+Camus채팅툴에 faceapi를 이식완료
 =====
 
 |Build Status| |docs| |PyPI| |Docker Hub| |License|
